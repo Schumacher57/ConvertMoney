@@ -1,0 +1,15 @@
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\obj\Debug\netcoreapp3.1\GetData.csprojAssemblyReference.cache
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\obj\Debug\netcoreapp3.1\GetData.AssemblyInfoInputs.cache
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\obj\Debug\netcoreapp3.1\GetData.AssemblyInfo.cs
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\obj\Debug\netcoreapp3.1\GetData.csproj.CoreCompileInputs.cache
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\bin\Debug\netcoreapp3.1\GetData.exe
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\bin\Debug\netcoreapp3.1\GetData.deps.json
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\bin\Debug\netcoreapp3.1\GetData.runtimeconfig.json
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\bin\Debug\netcoreapp3.1\GetData.runtimeconfig.dev.json
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\bin\Debug\netcoreapp3.1\GetData.dll
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\bin\Debug\netcoreapp3.1\GetData.pdb
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\obj\Debug\netcoreapp3.1\GetData.dll
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\obj\Debug\netcoreapp3.1\GetData.pdb
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\obj\Debug\netcoreapp3.1\GetData.genruntimeconfig.cache
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\GetData\obj\Debug\netcoreapp3.1\GetData.csproj.CopyComplete
