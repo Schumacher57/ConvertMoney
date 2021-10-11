@@ -1,55 +1,141 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
-using System.Text;
 using GetData.Model.GetValute;
 
 namespace GetData.Model
 {
-    class DataValute
+
+
+
+    /// <summary>
+    /// Класс - хранилизе валют
+    /// </summary>
+    class StorageValute
     {
+        protected IGetValuteByPath getValuteBehavior;
 
-        protected IGetValuteByPath getValute;
+        [JsonProperty("Valute")]
+        public Dictionary<string, DataValute> Valute { get; set; }
 
-        private string id;
-        private int numCode;
-        private string charCode;
-        private long nominal;
-        private string longName;
-        private decimal value;
-        private decimal previousVal;
+        [JsonProperty("Date")]
+        public DateTime Date { get; set; }
 
-        public string Id { get => id; set => id = value; }
-        public int NumCode { get => numCode; set => numCode = value; }
-        public string CharCode { get => charCode; set => charCode = value; }
-        public long Nominal { get => nominal; set => nominal = value; }
-        public string LongName { get => longName; set => longName = value; }
         /// <summary>
-        /// Значение валюты. Тип Decimal
+        /// Получение списка валюты по указанному пути
         /// </summary>
-        public decimal Value
+        /// <param name="path">Путь к списку валюты в формате JSON. Указать URL</param>
+        public void GetValute(string path)
         {
-            get => value;
-            set
+            var tmpStorage = new StorageValute();
+            tmpStorage = getValuteBehavior.GetValute(path);
+            Valute = tmpStorage.Valute;
+            Date = tmpStorage.Date;
+        }
+
+        /// <summary>
+        /// Конструктор по-умолчанию
+        /// </summary>
+        public StorageValute()
+        {
+            getValuteBehavior = new GetValuteByURL();   // Способ получния валюты по-умолчанию
+        }
+
+        /// <summary>
+        /// Установка типа получения значений по указанному адресу. По-умолчанию это URL ссылка
+        /// </summary>
+        /// <param name="getValuteBehavior">класс наследующий поведение получения данных из сторки адреса</param>
+        public void SetBehaviorGet(IGetValuteByPath getValuteBehavior)
+        {
+            this.getValuteBehavior = getValuteBehavior;
+        }
+        
+        #region Класс хранитель конкретной валюты
+        /// <summary>
+        /// Класс со свойством конкретной валюты
+        /// </summary>
+        internal class DataValute
+        {
+
+            /// <summary>
+            /// Значение с ID валюты. Тип: string
+            /// </summary>
+            [JsonProperty("ID")]
+            public string ID { get; set; }
+
+            /// <summary>
+            /// Код валюты. Обязательно string! - т.к. можно потерять нули вначале!
+            /// </summary>
+            [JsonProperty("NumCode")]
+            public string NumCode { get; set; }
+
+            /// <summary>
+            /// Свойство и коротим именем валюты
+            /// </summary>
+            [JsonProperty("CharCode")]
+            public string ShortName { get; set; }
+
+            /// <summary>
+            /// Номинал валюты
+            /// </summary>
+            [JsonProperty("Nominal")]
+            public int Nominal { get; set; }
+
+            /// <summary>
+            /// Знчение с полным наименованием валюты
+            /// </summary>
+            [JsonProperty("Name")]
+            public string LongName { get => longName; set => longName = value; }
+            private string longName;
+
+            /// <summary>
+            /// Цена валюты (по отношению к рублю)
+            /// </summary>
+            [JsonProperty("Value")]
+            public decimal Value
             {
-                /*if (value < 0 || decimal.TryParse(value)==false)
-                    this.value = value;*/
+                get => pValue;
+                set
+                {
+                    if (decimal.TryParse(value.ToString(), out pValue))
+                    {
+                        pValue = pValue < 0 ? 0 : value;
+                    }
+                    else
+                    {
+                        pValue = 0;
+                    }
+                }
             }
+            private decimal pValue = 0;
+
+            /// <summary>
+            /// Предыдущее значение валюты
+            /// </summary>
+            [JsonProperty("Previous")]
+            public decimal PreviousVal
+            {
+                get => previousVal;
+                set
+                {
+                    if (decimal.TryParse(value.ToString(), out previousVal))
+                    {
+                        previousVal = previousVal < 0 ? 0 : value;
+                    }
+                    else
+                    {
+                        previousVal = 0;
+                    }
+                }
+            }
+            private decimal previousVal;
+
+
+
 
         }
-        public decimal PreviousVal { get => previousVal; set => previousVal = value; }
-
-        public void GetData(string URLPath)
-        {
-            var tmpGetURL = new DataValute();
-            tmpGetURL = getValute.GetListCurrency(URLPath);
-        }
-
-        public DataValute()
-        {
-            this.getValute = new GetValuteByURL();
-
-        }
-
-
+        #endregion
     }
+
+
 }

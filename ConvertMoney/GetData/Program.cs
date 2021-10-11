@@ -4,6 +4,8 @@ using GetData.Model.GetValute;
 using Newtonsoft.Json;
 using System;
 using System.Net;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace GetData
 {
@@ -13,7 +15,7 @@ namespace GetData
         {
             var tstPrg = new Program();
 
-            tstPrg.testMethod1();
+            tstPrg.testMethod2();
 
 
             Console.WriteLine(new string('\n', 3));
@@ -23,9 +25,21 @@ namespace GetData
         }
 
 
+
+        void testMethod2()
+        {
+            var dataVlute = new StorageValute();
+            
+            dataVlute.GetValute(@"https://www.cbr-xml-daily.ru/daily_json.js");
+            Console.WriteLine($"{dataVlute.Valute["USD"].LongName}");
+            Console.WriteLine($"{dataVlute.Valute["USD"].Value}");
+
+
+        }
+
         void testMethod1()
         {
-            var dataValute1 = new DataValute();
+            //var dataValute1 = new DataValute();
 
             string URLAddress = @"https://www.cbr-xml-daily.ru/daily_json.js";
             string response;
@@ -35,15 +49,12 @@ namespace GetData
             }
 
             //var someVal1 = System.Text.Json.JsonSerializer.Deserialize<object>(response);
-            Test test = JsonConvert.DeserializeObject<Test>(response);
+            StorageValute test = JsonConvert.DeserializeObject<StorageValute>(response);
 
-
-            //Console.WriteLine(someVal1);
             Console.WriteLine(test);
-            Console.WriteLine(test.Valute["USD"].Value);
-            //Console.WriteLine($"Ответочка: {response}");
+            Console.WriteLine(test.Valute["USD"].LongName);
+            test.Valute.ToList().ForEach(x => Console.WriteLine($"Знач.: {x}"));
 
-            //dataValute1.
         }
     }
 }
