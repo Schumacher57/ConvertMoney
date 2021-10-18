@@ -29,7 +29,7 @@ namespace GetData
         void testMethod2()
         {
             var dataVlute = new StorageValute();
-            
+
             dataVlute.GetValute(@"https://www.cbr-xml-daily.ru/daily_json.js");
             Console.WriteLine($"{dataVlute.Valute["USD"].LongName}");
             Console.WriteLine($"{dataVlute.Valute["USD"].Value}");
@@ -56,5 +56,9 @@ namespace GetData
             test.Valute.ToList().ForEach(x => Console.WriteLine($"Знач.: {x}"));
 
         }
+    }
+    public class KissMyAss
+
+    {
     }
 }

@@ -5,7 +5,6 @@ D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\C
 D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\MainWindow.g.cs
 D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\App.g.cs
 D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\ConvertMoneyGUI_WPF_MarkupCompile.cache
-D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\ConvertMoneyGUI_WPF_MarkupCompile.lref
 D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\MainWindow.baml
 D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\ConvertMoneyGUI_WPF.g.resources
 D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\ConvertMoneyGUI_WPF.Properties.Resources.resources
@@ -13,3 +12,9 @@ D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\C
 D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\ConvertMoneyGUI_WPF.csproj.CoreCompileInputs.cache
 D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\ConvertMoneyGUI_WPF.exe
 D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\ConvertMoneyGUI_WPF.pdb
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\bin\Debug\Newtonsoft.Json.dll
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\bin\Debug\Newtonsoft.Json.xml
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\ConvertMoneyGUI_WPF.csproj.CopyComplete
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\bin\Debug\WpfAnimatedGif.dll
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\bin\Debug\WpfAnimatedGif.pdb
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\bin\Debug\WpfAnimatedGif.xml
