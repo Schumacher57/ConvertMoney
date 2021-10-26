@@ -14,9 +14,11 @@ namespace ConvertMoneyGUI_WPF
         public MainWindow()
         {
             InitializeComponent();
-            
+
             //Close.Click += (s, a) => { Environment.Exit(1); };
-            this.DataContext = new MainWindowViewModel();
+            //gdLoading.Visibility = Visibility.Visible;
+            LeftChangeValute.MouseDown += (s, a) => { gdMain.Visibility = Visibility.Collapsed; gdSelValute.Visibility = Visibility.Visible; };
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

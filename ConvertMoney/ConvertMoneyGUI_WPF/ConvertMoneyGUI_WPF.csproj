@@ -110,5 +110,11 @@
   <ItemGroup>
     <Resource Include="Resources\Loading.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ArrowRaplace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Arrow.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
