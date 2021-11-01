@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using Newtonsoft.Json;
 
-namespace GetData.Model.GetValute
+namespace ConvertMoneyGUI_WPF.Model.GetValute
 {
     class GetValuteByURL : IGetValuteByPath
     {

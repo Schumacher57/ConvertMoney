@@ -1,7 +1,5 @@
 ﻿
-
-
-namespace GetData.Model
+namespace ConvertMoneyGUI_WPF.Model
 {
     interface IGetValuteByPath
     {

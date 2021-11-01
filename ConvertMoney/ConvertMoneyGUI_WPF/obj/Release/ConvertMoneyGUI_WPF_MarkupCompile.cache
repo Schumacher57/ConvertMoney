@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Debug\
+D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\obj\Release\
 ConvertMoneyGUI_WPF
 none
 false
-DEBUG;TRACE
+TRACE
 D:\Books\Document\Google disk\Work\Programming\C#\Задания\NumberOne\UWP\ConvertMoney\ConvertMoneyGUI_WPF\App.xaml
 11151548125
 

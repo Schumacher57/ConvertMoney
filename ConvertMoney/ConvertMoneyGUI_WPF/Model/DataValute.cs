@@ -1,9 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using GetData.Model.GetValute;
+using ConvertMoneyGUI_WPF.Model.GetValute;
 
-namespace GetData.Model
+namespace ConvertMoneyGUI_WPF.Model
 {
 
     /// <summary>

@@ -65,6 +65,7 @@
     <Compile Include="Model\DataValute.cs" />
     <Compile Include="Model\GetValute\GetValuteByURL.cs" />
     <Compile Include="Model\GetValute\IGetValuteByPath.cs" />
+    <Compile Include="Service\ValuteConvert.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Page Include="MainWindow.xaml">
